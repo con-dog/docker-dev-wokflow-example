@@ -1,0 +1,9 @@
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+      target: development
+    image: docker-workflow-server:development
+    ports:
+      - "3000:3000"

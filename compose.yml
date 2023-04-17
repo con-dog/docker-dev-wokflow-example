@@ -1,0 +1,9 @@
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+      target: production
+    image: docker-workflow-server:production
+    ports:
+      - "5000:5000"
